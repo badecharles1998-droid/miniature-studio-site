@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarifs & Commande - Miniature Studio</title>
+    <meta name="description" content="Découvrez nos offres et commandez vos miniatures YouTube. Packs flexibles et tarifs dégressifs.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">Miniature <span>Studio</span></a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link">Accueil</a></li>
+                    <li><a href="portfolio.html" class="nav__link">Portfolio</a></li>
+                    <li><a href="about.html" class="nav__link">À Propos</a></li>
+                    <li><a href="pricing.html" class="nav__link active-link">Tarifs</a></li>
+                    <li><a href="contact.html" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav__toggle" id="nav-toggle"><i class="fas fa-bars"></i></div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-title-section container">
+            <h1 class="page-title">Des Tarifs Flexibles Pour Tous Les Créateurs</h1>
+            <p class="page-subtitle">Choisissez l'offre qui correspond à vos besoins et à votre budget.</p>
+        </section>
+
+        <section class="pricing container section">
+            <div class="pricing__container grid">
+                 <div class="pricing__card animate-on-scroll">
+                    <h3 class="pricing__title">Miniature Unique</h3>
+                    <p class="pricing__price">25€</p>
+                    <ul class="pricing__features">
+                        <li><i class="fas fa-check"></i> 1 miniature HD</li>
+                        <li><i class="fas fa-check"></i> 2 révisions incluses</li>
+                        <li><i class="fas fa-check"></i> Livraison en 48h</li>
+                        <li><i class="fas fa-check"></i> Format .png & .jpg</li>
+                    </ul>
+                    <a href="#order-form" class="button button--secondary">Commander</a>
+                </div>
+                <div class="pricing__card pricing__card--popular animate-on-scroll">
+                    <span class="popular-badge">Populaire</span>
+                    <h3 class="pricing__title">Pack 5 Miniatures</h3>
+                    <p class="pricing__price">115€ <span class="price-save">Économisez 10€</span></p>
+                     <ul class="pricing__features">
+                        <li><i class="fas fa-check"></i> 5 miniatures HD</li>
+                        <li><i class="fas fa-check"></i> 2 révisions par miniature</li>
+                        <li><i class="fas fa-check"></i> Livraison prioritaire</li>
+                        <li><i class="fas fa-check"></i> Format .png & .jpg</li>
+                    </ul>
+                    <a href="#order-form" class="button button--primary">Commander</a>
+                </div>
+                <div class="pricing__card animate-on-scroll">
+                    <h3 class="pricing__title">Pack 10 Miniatures</h3>
+                    <p class="pricing__price">225€ <span class="price-save">Économisez 25€</span></p>
+                     <ul class="pricing__features">
+                        <li><i class="fas fa-check"></i> 10 miniatures HD</li>
+                        <li><i class="fas fa-check"></i> 2 révisions par miniature</li>
+                        <li><i class="fas fa-check"></i> Support dédié</li>
+                        <li><i class="fas fa-check"></i> Format .png & .jpg</li>
+                    </ul>
+                    <a href="#order-form" class="button button--secondary">Commander</a>
+                </div>
+            </div>
+
+            <div class="custom-order animate-on-scroll" id="custom-order">
+                 <h2 class="section__title-small">Ou composez votre propre pack</h2>
+                 <p>Besoin d'un nombre spécifique de miniatures ? Ajustez la quantité ci-dessous.</p>
+                 <div class="custom-order__calculator">
+                     <label for="quantity">Quantité :</label>
+                     <div class="quantity-selector">
+                         <button id="quantity-minus" class="quantity-btn">-</button>
+                         <input type="number" id="quantity-input" value="1" min="1" max="20">
+                         <button id="quantity-plus" class="quantity-btn">+</button>
+                     </div>
+                     <div class="custom-order__total">
+                         Total: <span id="total-price">25.00</span>€
+                     </div>
+                 </div>
+                 <a href="#order-form" class="button button--primary">Commander cette quantité</a>
+            </div>
+        </section>
+
+        <section class="order-form-section container section" id="order-form">
+            <h2 class="section__title">Passez votre commande</h2>
+             <form action="#" class="contact__form form--detailed grid">
+                </form>
+        </section>
+
+        <section class="faq container section">
+             <h2 class="section__title">Questions Fréquemment Posées</h2>
+             <div class="faq__container">
+                <div class="faq__item">
+                    <div class="faq__question">
+                        <h3>Quels sont les délais de livraison ?</h3>
+                        <i class="fas fa-chevron-down faq__icon"></i>
+                    </div>
+                    <div class="faq__answer">
+                        <p>Le délai standard est de 48 heures pour une miniature unique. Les commandes en pack bénéficient d'un traitement prioritaire. Nous pouvons discuter de délais plus courts si nécessaire.</p>
+                    </div>
+                </div>
+                 <div class="faq__item">
+                    <div class="faq__question">
+                        <h3>Combien de révisions sont incluses ?</h3>
+                        <i class="fas fa-chevron-down faq__icon"></i>
+                    </div>
+                    <div class="faq__answer">
+                        <p>Chaque miniature inclut deux cycles de révisions pour s'assurer que le résultat final vous convienne parfaitement. Les révisions supplémentaires sont possibles moyennant un petit supplément.</p>
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <div class="faq__question">
+                        <h3>Sous quel format les fichiers sont-ils livrés ?</h3>
+                        <i class="fas fa-chevron-down faq__icon"></i>
+                    </div>
+                    <div class="faq__answer">
+                        <p>Nous livrons les miniatures au format .JPG et .PNG en haute résolution (1280x720 pixels), parfaitement optimisées pour YouTube.</p>
+                    </div>
+                </div>
+             </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+         </footer>
+
+    <a href="https://wa.me/VOTRENUMERODETELEPHONE" class="whatsapp-flottant" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <script src="script.js"></script>
+</body>
+</html>

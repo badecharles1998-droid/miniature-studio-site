@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Miniature Studio</title>
+    <meta name="description" content="Découvrez nos créations de miniatures YouTube classées par niche : gaming, business, vlog, et plus encore.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">Miniature <span>Studio</span></a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link">Accueil</a></li>
+                    <li><a href="portfolio.html" class="nav__link active-link">Portfolio</a></li>
+                    <li><a href="about.html" class="nav__link">À Propos</a></li>
+                    <li><a href="pricing.html" class="nav__link">Tarifs</a></li>
+                    <li><a href="contact.html" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav__toggle" id="nav-toggle"><i class="fas fa-bars"></i></div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-title-section container">
+            <h1 class="page-title">Notre Galerie de Créations</h1>
+            <p class="page-subtitle">Explorez nos travaux et trouvez l'inspiration pour votre prochaine vidéo.</p>
+        </section>
+
+        <section class="portfolio-page container section">
+            <div class="portfolio__filters">
+                <button class="portfolio__filter-btn active" data-filter="all">Tout</button>
+                <button class="portfolio__filter-btn" data-filter="gaming">Gaming</button>
+                <button class="portfolio__filter-btn" data-filter="business">Business</button>
+                <button class="portfolio__filter-btn" data-filter="vlog">Vlog</button>
+            </div>
+            
+            <div class="portfolio-page__grid grid">
+                <div class="portfolio__item" data-category="gaming"><img src="https://via.placeholder.com/400x225/FF0000/FFFFFF?text=Gaming+1" alt="Miniature Gaming"></div>
+                <div class="portfolio__item" data-category="business"><img src="https://via.placeholder.com/400x225/FFD700/111111?text=Business+1" alt="Miniature Business"></div>
+                <div class="portfolio__item" data-category="vlog"><img src="https://via.placeholder.com/400x225/111111/FFFFFF?text=Vlog+1" alt="Miniature Vlog"></div>
+                <div class="portfolio__item" data-category="gaming"><img src="https://via.placeholder.com/400x225/FF0000/FFFFFF?text=Gaming+2" alt="Miniature Gaming"></div>
+                <div class="portfolio__item" data-category="business"><img src="https://via.placeholder.com/400x225/FFD700/111111?text=Business+2" alt="Miniature Business"></div>
+                <div class="portfolio__item" data-category="gaming"><img src="https://via.placeholder.com/400x225/FF0000/FFFFFF?text=Gaming+3" alt="Miniature Gaming"></div>
+                <div class="portfolio__item" data-category="vlog"><img src="https://via.placeholder.com/400x225/111111/FFFFFF?text=Vlog+2" alt="Miniature Vlog"></div>
+                <div class="portfolio__item" data-category="business"><img src="https://via.placeholder.com/400x225/FFD700/111111?text=Business+3" alt="Miniature Business"></div>
+            </div>
+        </section>
+        
+        <section class="cta-section container section">
+             <h2 class="section__title">Prêt à créer la vôtre ?</h2>
+             <p>Transformons vos idées en miniatures qui attirent les clics.</p>
+             <a href="pricing.html" class="button button--primary">Voir les tarifs et commander</a>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <div>
+                <a href="index.html" class="footer__logo">Miniature <span>Studio</span></a>
+                <p class="footer__description">Des miniatures percutantes pour créateurs ambitieux.</p>
+            </div>
+            <div class="footer__content">
+                 <div>
+                    <h3 class="footer__title">Navigation</h3>
+                    <ul class="footer__links">
+                        <li><a href="about.html" class="footer__link">À Propos</a></li>
+                        <li><a href="portfolio.html" class="footer__link">Portfolio</a></li>
+                        <li><a href="pricing.html" class="footer__link">Tarifs</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer__title">Contact</h3>
+                    <ul class="footer__links">
+                         <li><a href="contact.html" class="footer__link">Contactez-nous</a></li>
+                         <li><a href="#" class="footer__link">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer__title">Suivez-nous</h3>
+                    <div class="footer__social">
+                        <a href="#" target="_blank" class="footer__social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="#" target="_blank" class="footer__social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank" class="footer__social-link"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="footer__copy">&#169; 2025 Miniature Studio. Tous droits réservés.</p>
+    </footer>
+
+    <a href="https://wa.me/VOTRENUMERODETELEPHONE" class="whatsapp-flottant" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <script src="script.js"></script>
+</body>
+</html>
