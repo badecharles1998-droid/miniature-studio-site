@@ -643,4 +643,24 @@ img {
         display: block;
         z-index: 101;
     }
+}/*=============== PAYMENT STATUS MESSAGE ===============*/
+.payment-status-message {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+    display: none; /* Caché par défaut */
+}
+
+.payment-status-message.success {
+    background-color: #28a745; /* Vert */
+    color: var(--light-color);
+    display: block;
+}
+
+.payment-status-message.error {
+    background-color: var(--primary-color); /* Rouge */
+    color: var(--light-color);
+    display: block;
 }
