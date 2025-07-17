@@ -36,60 +36,63 @@
         </section>
 
         <section class="pricing container section">
-            <div class="pricing__container grid">
-                 <div class="pricing__card animate-on-scroll">
-                    <h3 class="pricing__title">Miniature Unique</h3>
-                    <p class="pricing__price">25€</p>
-                    <ul class="pricing__features">
-                        <li><i class="fas fa-check"></i> 1 miniature HD</li>
-                        <li><i class="fas fa-check"></i> 2 révisions incluses</li>
-                        <li><i class="fas fa-check"></i> Livraison en 48h</li>
-                        <li><i class="fas fa-check"></i> Format .png & .jpg</li>
-                    </ul>
-                    <a href="#order-form" class="button button--secondary">Commander</a>
-                </div>
-                <div class="pricing__card pricing__card--popular animate-on-scroll">
-                    <span class="popular-badge">Populaire</span>
-                    <h3 class="pricing__title">Pack 5 Miniatures</h3>
-                    <p class="pricing__price">115€ <span class="price-save">Économisez 10€</span></p>
-                     <ul class="pricing__features">
-                        <li><i class="fas fa-check"></i> 5 miniatures HD</li>
-                        <li><i class="fas fa-check"></i> 2 révisions par miniature</li>
-                        <li><i class="fas fa-check"></i> Livraison prioritaire</li>
-                        <li><i class="fas fa-check"></i> Format .png & .jpg</li>
-                    </ul>
-                    <a href="#order-form" class="button button--primary">Commander</a>
-                </div>
-                <div class="pricing__card animate-on-scroll">
-                    <h3 class="pricing__title">Pack 10 Miniatures</h3>
-                    <p class="pricing__price">225€ <span class="price-save">Économisez 25€</span></p>
-                     <ul class="pricing__features">
-                        <li><i class="fas fa-check"></i> 10 miniatures HD</li>
-                        <li><i class="fas fa-check"></i> 2 révisions par miniature</li>
-                        <li><i class="fas fa-check"></i> Support dédié</li>
-                        <li><i class="fas fa-check"></i> Format .png & .jpg</li>
-                    </ul>
-                    <a href="#order-form" class="button button--secondary">Commander</a>
-                </div>
-            </div>
+    <div class="pricing__container grid">
+         <div class="pricing__card animate-on-scroll">
+            <h3 class="pricing__title">Miniature Unique</h3>
+            <p class="pricing__price">25€</p>
+            <ul class="pricing__features">
+                <li><i class="fas fa-check"></i> 1 miniature HD</li>
+                <li><i class="fas fa-check"></i> 2 révisions incluses</li>
+                <li><i class="fas fa-check"></i> Livraison en 48h</li>
+                <li><i class="fas fa-check"></i> Format .png & .jpg</li>
+            </ul>
+            <div id="paypal-button-container-unique" class="paypal-button-wrapper"></div>
+        </div>
+        <div class="pricing__card pricing__card--popular animate-on-scroll">
+            <span class="popular-badge">Populaire</span>
+            <h3 class="pricing__title">Pack 5 Miniatures</h3>
+            <p class="pricing__price">115€ <span class="price-save">Économisez 10€</span></p>
+             <ul class="pricing__features">
+                 <li><i class="fas fa-check"></i> 5 miniatures HD</li>
+                 <li><i class="fas fa-check"></i> 2 révisions par miniature</li>
+                 <li><i class="fas fa-check"></i> Livraison prioritaire</li>
+                 <li><i class="fas fa-check"></i> Format .png & .jpg</li>
+            </ul>
+            <div id="paypal-button-container-pack5" class="paypal-button-wrapper"></div>
+        </div>
+        <div class="pricing__card animate-on-scroll">
+            <h3 class="pricing__title">Pack 10 Miniatures</h3>
+            <p class="pricing__price">225€ <span class="price-save">Économisez 25€</span></p>
+             <ul class="pricing__features">
+                <li><i class="fas fa-check"></i> 10 miniatures HD</li>
+                <li><i class="fas fa-check"></i> 2 révisions par miniature</li>
+                <li><i class="fas fa-check"></i> Support dédié</li>
+                <li><i class="fas fa-check"></i> Format .png & .jpg</li>
+            </ul>
+            <div id="paypal-button-container-pack10" class="paypal-button-wrapper"></div>
+        </div>
+    </div>
 
-            <div class="custom-order animate-on-scroll" id="custom-order">
-                 <h2 class="section__title-small">Ou composez votre propre pack</h2>
-                 <p>Besoin d'un nombre spécifique de miniatures ? Ajustez la quantité ci-dessous.</p>
-                 <div class="custom-order__calculator">
-                     <label for="quantity">Quantité :</label>
-                     <div class="quantity-selector">
-                         <button id="quantity-minus" class="quantity-btn">-</button>
-                         <input type="number" id="quantity-input" value="1" min="1" max="20">
-                         <button id="quantity-plus" class="quantity-btn">+</button>
-                     </div>
-                     <div class="custom-order__total">
-                         Total: <span id="total-price">25.00</span>€
-                     </div>
-                 </div>
-                 <a href="#order-form" class="button button--primary">Commander cette quantité</a>
-            </div>
-        </section>
+    <div class="custom-order animate-on-scroll" id="custom-order">
+         <h2 class="section__title-small">Ou composez votre propre pack</h2>
+         <p>Ajustez la quantité et confirmez pour afficher le bouton de paiement.</p>
+         <div class="custom-order__calculator">
+             <label for="quantity">Quantité :</label>
+             <div class="quantity-selector">
+                 <button id="quantity-minus" class="quantity-btn">-</button>
+                 <input type="number" id="quantity-input" value="1" min="1" max="20">
+                 <button id="quantity-plus" class="quantity-btn">+</button>
+             </div>
+             <div class="custom-order__total">
+                 Total: <span id="total-price">25.00</span>€
+             </div>
+         </div>
+         <button class="button button--primary" id="confirm-custom-order">Valider la quantité</button>
+         <div id="paypal-button-container-custom" class="paypal-button-wrapper"></div>
+    </div>
+    
+    <div id="payment-status" class="payment-status-message"></div>
+</section>
 
         <section class="order-form-section container section" id="order-form">
             <h2 class="section__title">Passez votre commande</h2>
@@ -136,6 +139,8 @@
          </footer>
 
     <a href="https://wa.me/VOTRENUMERODETELEPHONE" class="whatsapp-flottant" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <script src="https://www.paypal.com/sdk/js?client-id=VOTRE_CLIENT_ID_PAYPAL&currency=EUR&disable-funding=credit,card"></script>
+
     <script src="script.js"></script>
 </body>
 </html>
